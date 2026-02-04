@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { mockEmployees } from "../mocks/mocks";
 import prisma from "@/lib/prisma";
-import { wrapWithTryCatch } from "@/utils/api.utils";
 
 export async function GET(req: NextRequest) {
    console.log("req: ", req.body);
@@ -14,21 +13,37 @@ export async function GET(req: NextRequest) {
 
 export async function POST(req: NextRequest) {
    //^ TRY CATCH HELPER
-   await wrapWithTryCatch(async () => {
-      const body = await req.json();
-      console.log("REQUEST =>  ", body);
-      const res = await prisma.user.create({
-         data: {
-            email: body.email,
-            name: body.name,
-            password: body.password,
-         },
-      });
-      return NextResponse.json({
-         ok: true,
-         status: 201,
-         message: "USER CREATED SUCCESSFULLY",
-         user: res,
-      });
+
+   const body = await req.json();
+   console.log("REQUEST =>  ", body);
+
+   const userAvailable = await prisma.user.findMany({
+      where: { OR: [{ name: body.name }, { email: body.email }] },
+   });
+
+   console.log(userAvailable);
+
+   //    if (userAvailable.length > 0) {
+   //       console.log("REPEATED");
+   //       return NextResponse.json({
+   //          ok: false,
+   //          status: 400,
+   //          message: "نام یا ایمیل تکراری است",
+   //       });
+   //    }
+
+   const res = await prisma.user.create({
+      data: {
+         email: body.email,
+         name: body.name,
+         password: body.password,
+      },
+   });
+
+   return NextResponse.json({
+      ok: true,
+      status: 201,
+      message: "USER CREATED SUCCESSFULLY",
+      user: res,
    });
 }

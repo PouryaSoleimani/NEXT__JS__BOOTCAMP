@@ -1,0 +1,48 @@
+{
+   "author": "Tatsze",
+   "description": "The classiest in the neighborhood. Born Dandy by Tatsze.",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlWxC6ROjUmaSJVFUUyWsM8B8U2XiuTK3Oesxp9NpKRvmWlf8zn0i3clWeuXhV2iE6Ni1UXdj9BJcxlwqS3eBm25oMgNGDkRYaWhUnlCcocbBDUItKkZ/Wt1C3Ud6iKW3tn1MV/nCEsxQEpMrIN+DTZ4jPZNBAUW/P45sioRXaMm49AzBz/z+P3YnIdz/n4WvqW5Vx2FegOLYvew3ncX+AlvfgCZHonImAofC1g+qM8GsSExNs1kn7r/65Im1cq5D8qunh75GqT1D55bFiki042/R/vavGmPdLPet4bEhQyL7H2iVXgeZ3k32CAZjS3rwyG81z6zzZesCiHqYoC7GaQIDAQAB",
+   "manifest_version": 3,
+   "name": "Born Dandy",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 255, 255, 255 ],
+"frame": [ 0, 0, 0 ],
+         "frame_inactive": [ 0, 0, 0 ],
+         "frame_incognito": [ 0, 0, 0 ],
+         "frame_incognito_inactive": [ 0, 0, 0 ],
+         "ntp_background": [ 0, 0, 0 ],
+         "ntp_header": [ 255, 255, 255 ],
+         "ntp_text": [ 255, 255, 255 ],
+         "omnibox_background": [ 0, 0, 0 ],
+         "omnibox_text": [ 225, 225, 225 ],
+         "tab_background_text": [ 255, 255, 255 ],
+         "tab_background_text_inactive": [ 255, 255, 255 ],
+         "tab_background_text_incognito": [ 255, 255, 255 ],
+         "tab_background_text_incognito_inactive": [ 255, 255, 255 ],
+         "tab_text": [ 225, 225, 225 ],
+         "toolbar": [ 20, 20, 21 ],
+         "toolbar_button_icon": [ 225, 225, 225 ], 
+"toolbar_text": [ 225, 225, 225 ]
+      },
+      "images": {
+         "theme_frame": "images/theme_frame.png",
+         "theme_frame_inactive": "images/theme_frame.png",
+         "theme_frame_incognito": "images/theme_frame.png",
+         "theme_frame_incognito_inactive": "images/theme_frame.png", 
+         "theme_toolbar": "images/theme_toolbar.png"
+      },
+      "tints": {
+         "frame": [
+            0,
+            0,
+            0
+         ],
+         "frame_inactive": [ 0, 0, 0 ],
+         "frame_incognito": [ 0, 0, 0 ],
+         "frame_incognito_inactive": [ 0, 0, 0 ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6.1"
+}
