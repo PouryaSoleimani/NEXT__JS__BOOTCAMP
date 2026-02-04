@@ -21,14 +21,11 @@ export async function POST(req: NextRequest) {
     });
 
     console.log("RESULT OF POST REQUEST => ", result);
-
-    if (!result) {
-        return NextResponse.json(
-            { message: "INTERNAL SERVER ERROR ..." },
-            { status: 500 },
-        );
-    } else {
+    
+    try {
         return NextResponse.json({
+            ok: true,
+            status: 201,
             message: "USER CREATED SUCCESSFULLY ",
             user: {
                 name: body.name,
@@ -36,5 +33,13 @@ export async function POST(req: NextRequest) {
                 password: body.password,
             },
         });
+    } catch (error) {
+        if (error instanceof Error) {
+            return NextResponse.json({
+                errorName: error.name,
+                errorMessage: error.message,
+            });
+        }
     }
+
 }
