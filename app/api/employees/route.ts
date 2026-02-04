@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { mockEmployees } from "../mocks/mocks";
+import prisma from "@/lib/prisma";
 
-export function GET(req: NextRequest) {
-  console.log('req: ', req.body)
+export async function GET(req: NextRequest) {
+  console.log("req: ", req.body);
   return NextResponse.json({
     message: "GET ALL EMPLOYEES ROUTE",
     req: req,
@@ -10,18 +11,23 @@ export function GET(req: NextRequest) {
   });
 }
 
+export async function POST(req: Request) {
+  const body = await req.json();
+  console.log("REQUEST =>  ", body);
+  
+  const result = await prisma.user.create({
+    data: { email: body.email, name: body.name, password: body.password },
+  });
 
-export function POST(req : NextRequest) {
-  console.log('req: ', req.body)
-  try {
+  if (!result) {
+    return NextResponse.json(
+      { message: "INTERNAL SERVER ERROR ..." },
+      { status: 500 },
+    );
+  } else {
     return NextResponse.json({
-      message: "EMPLOYEE CREATED SUCCESSFULLY",
-      newUser: { id: mockEmployees.length + 1, ...req.body }
-    }, { status: 201 });    
-  } catch (error) {
-    if (error instanceof Error) { 
-      return NextResponse.json({ message: error.message }, { status: 500 }); 
-    }
-    return NextResponse.json({ message: "INTERNAL SERVER ERROR" }, { status: 500 });
+      message: "USER CREATED SUCCESSFULLY ",
+      user: { name: body.name, email: body.email, password: body.password },
+    });
   }
 }
