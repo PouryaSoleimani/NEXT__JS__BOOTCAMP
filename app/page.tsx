@@ -1,6 +1,5 @@
-// HOME PAGE
-export default function Home(props : PageProps<'/'>){
-return (
-  <div></div>
-)
-}
+const Home = () => {
+  return <div className="text">Pag</div>;
+};
+
+export default Home;
