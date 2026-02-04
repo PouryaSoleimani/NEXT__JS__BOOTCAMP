@@ -9,8 +9,8 @@ export async function GET(req: NextRequest) {
     req: req,
     data: mockEmployees,
   });
+  
 }
-
 export async function POST(req: Request) {
   const body = await req.json();
   console.log("REQUEST =>  ", body);
@@ -20,7 +20,7 @@ export async function POST(req: Request) {
   });
 
   console.log("RESULT OF POST REQUEST => ", result);
-  
+
   if (!result) {
       return NextResponse.json(
           { message: "INTERNAL SERVER ERROR ..." },
