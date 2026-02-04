@@ -10,6 +10,8 @@ export async function GET(req: NextRequest) {
         data: mockEmployees,
     });
 }
+
+
 export async function POST(req: NextRequest) {
     const body = await req.json();
     console.log("REQUEST =>  ", body);
