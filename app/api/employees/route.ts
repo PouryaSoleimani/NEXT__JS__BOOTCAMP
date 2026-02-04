@@ -11,35 +11,31 @@ export async function GET(req: NextRequest) {
     });
 }
 
-
 export async function POST(req: NextRequest) {
-    const body = await req.json();
-    console.log("REQUEST =>  ", body);
-
-    const result = await prisma.user.create({
-        data: { email: body.email, name: body.name, password: body.password },
-    });
-
-    console.log("RESULT OF POST REQUEST => ", result);
-    
     try {
+        const body = await req.json();
+        console.log("REQUEST =>  ", body);
+        const res = await prisma.user.create({
+            data: {
+                email: body.email,
+                name: body.name,
+                password: body.password,
+            },
+        });
         return NextResponse.json({
             ok: true,
             status: 201,
-            message: "USER CREATED SUCCESSFULLY ",
-            user: {
-                name: body.name,
-                email: body.email,
-                password: body.password,
-            },
+            message: "USER CREATED SUCCESSFULLY",
+            user: res,
         });
     } catch (error) {
         if (error instanceof Error) {
             return NextResponse.json({
-                errorName: error.name,
-                errorMessage: error.message,
+                ok: false,
+                status: 500,
+                name: error.name,
+                message: error.message,
             });
         }
     }
-
 }
