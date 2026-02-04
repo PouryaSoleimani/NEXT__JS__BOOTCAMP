@@ -13,6 +13,8 @@ export async function GET(req: NextRequest) {
 
 export async function POST(req: NextRequest) {
    //^ TRY CATCH HELPER
+   const secret = new TextEncoder().encode("asdasdas");
+   console.info("SECRET =>", secret);
 
    const body = await req.json();
    console.log("REQUEST =>  ", body);
@@ -23,14 +25,14 @@ export async function POST(req: NextRequest) {
 
    console.log(userAvailable);
 
-   //    if (userAvailable.length > 0) {
-   //       console.log("REPEATED");
-   //       return NextResponse.json({
-   //          ok: false,
-   //          status: 400,
-   //          message: "نام یا ایمیل تکراری است",
-   //       });
-   //    }
+   // if (userAvailable.length > 0) {
+   //  console.log("REPEATED");
+   //  return NextResponse.json({
+   //  ok: false,
+   // status: 400,
+   //  message: "نام یا ایمیل تکراری است",
+   // });
+   // }
 
    const res = await prisma.user.create({
       data: {
