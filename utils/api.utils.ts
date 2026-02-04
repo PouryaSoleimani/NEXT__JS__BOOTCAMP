@@ -1,22 +1,6 @@
 import { NextResponse } from "next/server";
 
-export async function wrapWithTryCatch(
-   callback: () => Promise<
-      NextResponse<{
-         ok: boolean;
-         status: number;
-         message: string;
-         user: {
-            id: number;
-            name: string;
-            email: string;
-            password: string;
-            createdAt: Date;
-            updatedAt: Date;
-         };
-      }>
-   >,
-) {
+export async function wrapWithTryCatch<T>(callback: () => Promise<T>) {
    try {
       return await callback();
    } catch (error) {
