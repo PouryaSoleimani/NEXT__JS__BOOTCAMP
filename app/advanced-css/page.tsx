@@ -32,8 +32,8 @@ const AdvancedCssPage = () => {
                </ul>
             </nav>
             <div className="actions">
-              <button>Login</button>
-              <button>Sign Up</button>
+               <button>Login</button>
+               <button>Sign Up</button>
             </div>
          </header>
          <main></main>
