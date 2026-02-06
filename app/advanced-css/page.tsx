@@ -1,9 +1,10 @@
+import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 
 const AdvancedCssPage = () => {
    return (
       <section className="wrapper">
-         <header className="container">
+         <header>
             <div className="logo">
                <Image
                   src={"/next.svg"}
@@ -31,6 +32,9 @@ const AdvancedCssPage = () => {
                   </li>
                </ul>
             </nav>
+            <div className="mobile-hamburger">
+               <MenuIcon />
+            </div>
             <div className="actions">
                <button>Login</button>
                <button>Sign Up</button>

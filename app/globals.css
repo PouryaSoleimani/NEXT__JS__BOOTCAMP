@@ -23,6 +23,7 @@ html {
       "Helvetica Neue",
       sans-serif;
 }
+
 input,
 label,
 select,
@@ -36,9 +37,11 @@ option,
 optgroup {
    font-family: inherit;
 }
+
 :root {
    --background: #dddbdb;
    --foreground: #171717;
+   --primary: #214268;
 }
 
 @theme inline {
@@ -81,4 +84,5 @@ body {
 /*//^ ADVANCED CSS COURSE ************************************************************************/
 .wrapper {
    min-height: 100dvh;
+   background-color: var(--background);
 }

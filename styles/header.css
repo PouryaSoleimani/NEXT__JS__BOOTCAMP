@@ -1,21 +1,35 @@
 /* HEADER CSS */
 header {
-   border: 3px solid black;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding-inline: 120px;
+   padding-block: 1rem;
+   margin-inline: auto;
+   width: min(75rem, 100% - 2rem);
+   background-color: white;
+   padding-inline: 2rem;
+   margin-top: 10px;
+   border-radius: 20px;
+   box-shadow: 3px 3px 10px #ccc;
+
+   .logo {
+      width: 200px;
+      height: 40px;
+   }
    nav {
       ul {
          display: flex;
-         gap: 20px;
+         gap: min(3rem, 1rem);
+         list-style: none;
+         white-space: nowrap;
          li {
             &:hover {
-               text-decoration: underline;
-               text-decoration-thickness: 2px;
-               text-decoration-color: #214268;
+               color: var(--primary);
+               font-weight: 600;
             }
-            a {
+            &.active {
+               color: var(--primary);
+               font-weight: 600;
             }
          }
       }
@@ -24,7 +38,7 @@ header {
       display: flex;
       gap: 10px;
       button {
-         background-color: #61a5f3;
+         background-color: var(--primary);
          border-radius: 8px;
          padding: 10px 20px;
          color: whitesmoke;
@@ -32,8 +46,51 @@ header {
          cursor: pointer;
          font-weight: bold;
          &:hover {
-            background-color: #214268;
+            background-color: #3a7ecc;
          }
+      }
+   }
+   .mobile-hamburger {
+      display: none;
+   }
+}
+@media (width <= 1024px) {
+   header {
+      background-color: transparent;
+      box-shadow: none;
+      padding-inline: 0;
+      padding-block: 1rem;
+      .logo {
+         width: 140;
+         height: 30;
+      }
+      nav {
+         display: none;
+      }
+   }
+}
+@media (width <= 768px) {
+   header {
+      .actions {
+         gap: 5px;
+         button {
+            padding: 5px 10px;
+         }
+      }
+   }
+}
+
+@media (width <= 490px) {
+   header {
+      .logo {
+         width: 100;
+         height: 20;
+      }
+      .actions {
+         display: none;
+      }
+      .mobile-hamburger {
+         display: block;
       }
    }
 }
