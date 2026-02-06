@@ -1,11 +1,14 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable-next-line import-notation */
 @import "tailwindcss";
 
 *,
 *::before,
 *::after {
    box-sizing: border-box;
-   padding: 0;
+
    margin: 0;
+   padding: 0;
 }
 
 html {
@@ -39,7 +42,7 @@ optgroup {
 }
 
 :root {
-   --background: #dddbdb;
+   --background: #fff;
    --foreground: #171717;
    --primary: #214268;
 }
@@ -53,7 +56,7 @@ optgroup {
 
 @media (prefers-color-scheme: dark) {
    :root {
-      --background: #dddbdb;
+      --background: #fff;
       --foreground: #0a0a0a;
    }
 }
@@ -62,11 +65,13 @@ body {
    background: var(--background);
    color: var(--foreground);
    font-feature-settings: "ss01";
+
    box-sizing: border-box;
 }
 
 .container {
    max-width: 1580px;
+
    margin: 0 auto;
    padding: 0 20px;
 }
@@ -83,11 +88,13 @@ body {
    justify-content: center;
 }
 
-/*//^ ADVANCED CSS COURSE ************************************************************************/
+/* //^ ADVANCED CSS COURSE ************************************************************************/
 .wrapper {
    background-color: var(--background);
+
    width: min(85rem, 100% - 2rem);
+
    margin-inline: auto;
-   padding-inline: 2rem;
    padding-block: 1rem;
+   padding-inline: 2rem;
 }
