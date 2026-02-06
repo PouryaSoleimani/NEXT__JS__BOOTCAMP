@@ -15,7 +15,6 @@ export async function POST(req: NextRequest) {
    //^ TRY CATCH HELPER
    const secret = new TextEncoder().encode("asdasdas");
    console.info("SECRET =>", secret);
-
    const body = await req.json();
    console.log("REQUEST =>  ", body);
 
