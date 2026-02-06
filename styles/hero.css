@@ -1,20 +1,31 @@
 .hero {
-   background: url("/hero-background.avif") no-repeat;
-   background-size: cover;
-   min-block-size: 40rem;
+   background-color: white;
+   position: relative;
+   inset: 0;
+   z-index: 10;
+
+   .bg-image {
+      position: absolute;
+      inset-inline-end: 0;
+      inset-block-start: 0;
+      inset-block-end: 0;
+      height: 100%;
+      width: 70%;
+      z-index: -1;
+   }
    .hero-content {
+      inline-size: min(81.75rem, 100% - 2rem);
       background: #fff;
       background: linear-gradient(
          90deg,
          rgba(255, 255, 255, 1) 0%,
-         rgba(255, 255, 255, 0.52) 74%,
+         rgba(255, 255, 255, 0.6) 74%,
          rgba(255, 255, 255, 0) 100%
       );
-      border: 3px solid black;
-      inline-size: 73%;
+
       margin: 0 auto;
-      min-block-size: inherit;
-      padding-block: 2rem;
+      block-size: inherit;
+      padding-block: 5rem;
       background-color: transparent;
       display: flex;
       flex-direction: column;
@@ -31,7 +42,7 @@
       p {
          font-size: 1.75rem;
          font-weight: 400;
-         inline-size: 80%;
+         max-inline-size: 54%;
          line-height: 1.5;
       }
       .actions {
@@ -59,6 +70,64 @@
             &:hover {
                background-color: #3a7ecc;
             }
+         }
+      }
+   }
+}
+
+/* RESPONSIVE _______________________________________________________-- */
+@media (width <= 1350px) {
+   .hero {
+      block-size: 35rem;
+      .hero-content {
+         padding-inline-start: 2rem;
+         row-gap: 2rem;
+         h1 {
+          max-inline-size: 70%;
+          font-size: 3.75rem;
+         }
+         p {
+          font-size: 1.5rem;
+          max-inline-size: 50%;
+         }
+      }
+   }
+}
+
+@media (width <= 1280px) {
+   .hero {
+      min-block-size: 30rem;
+   }
+}
+@media (width <= 1024px) {
+   .hero {
+      .hero-content {
+         h1 {
+            font-size: 3rem;
+            max-inline-size: 60%;
+         }
+         p {
+            font-size: 1.5rem;
+            max-inline-size: 55%;
+         }
+      }
+   }
+}
+@media (width <= 640px) {
+   .hero {
+      min-block-size: 30rem;
+   }
+}
+@media (width <= 480px) {
+   .hero {
+      .hero-content {
+         h1 {
+            font-size: 2rem;
+            max-inline-size: 95%;
+         }
+         p {
+            font-size: 1rem;
+            max-inline-size: 85%;
          }
       }
    }

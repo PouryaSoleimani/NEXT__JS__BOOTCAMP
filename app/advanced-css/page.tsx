@@ -43,11 +43,18 @@ const AdvancedCssPage = () => {
 
          <main className="">
             <div className="hero">
+               <Image
+                  className="bg-image"
+                  src={"/hero-background.avif"}
+                  width={900}
+                  height={600}
+                  alt=""
+               />
                <div className="hero-content">
                   <h1>Effortless Logistics, Every Step of the Way</h1>
                   <p>
-                     Manage Your shipments, track in real-time , and get
-                     the best rates --all from one platform
+                     Manage Your shipments, track in real-time, and get the
+                     best rates --all from one platform
                   </p>
                   <div className="actions">
                      <button>Get a Free Quote</button>
