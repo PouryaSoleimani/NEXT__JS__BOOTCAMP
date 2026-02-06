@@ -38,18 +38,17 @@
       align-items: flex-start;
       justify-content: flex-start;
       row-gap: 3.5rem;
+      min-block-size: 40rem;
 
-      inline-size: min(81.75rem, 100% - 2rem);
-
-      margin: 0 auto;
       padding-block: 5rem;
+      padding-inline-start: max(1rem, ((100% - 70rem) / 2));
 
       h1 {
          color: var(--primary);
 
          max-inline-size: 90%;
 
-         font-size: 4.25rem;
+         font-size: clamp(4rem , 2rem , 1rem);
          font-weight: 800;
 
          line-height: 1.3;
