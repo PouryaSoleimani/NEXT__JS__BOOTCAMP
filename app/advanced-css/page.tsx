@@ -36,6 +36,7 @@ const AdvancedCssPage = () => {
                <button>Sign Up</button>
             </div>
          </header>
+
          <main></main>
          <footer></footer>
       </section>
