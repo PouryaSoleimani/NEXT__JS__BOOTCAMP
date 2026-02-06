@@ -1,72 +1,95 @@
 .hero {
-   background-color: white;
+   background-color: hsl(100deg 0 0);
+
    position: relative;
    inset: 0;
    z-index: 10;
 
    .bg-image {
       position: absolute;
+      inset-block: 0;
       inset-inline-end: 0;
-      inset-block-start: 0;
-      inset-block-end: 0;
-      height: 100%;
-      width: 70%;
       z-index: -1;
+
+      width: 70%;
+      height: 100%;
+      object-fit: contain;
    }
+
    .hero-content {
-      inline-size: min(81.75rem, 100% - 2rem);
       background: #fff;
       background: linear-gradient(
          90deg,
-         rgba(255, 255, 255, 1) 0%,
-         rgba(255, 255, 255, 0.6) 74%,
-         rgba(255, 255, 255, 0) 100%
+         rgb(255 255 255 / 100%) 0%,
+         rgb(255 255 255 / 60%) 74%,
+         rgb(255 255 255 / 0%) 100%
       );
-
-      margin: 0 auto;
-      block-size: inherit;
-      padding-block: 5rem;
       background-color: transparent;
+
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       align-items: flex-start;
+      justify-content: flex-start;
       row-gap: 3.5rem;
+
+      inline-size: min(81.75rem, 100% - 2rem);
+
+      margin: 0 auto;
+      padding-block: 5rem;
+
       h1 {
          color: var(--primary);
+
+         max-inline-size: 90%;
+
          font-size: 4.25rem;
          font-weight: 800;
-         max-inline-size: 90%;
+
          line-height: 1.3;
       }
+
       p {
+         max-inline-size: 54%;
+
          font-size: 1.75rem;
          font-weight: 400;
-         max-inline-size: 54%;
+
          line-height: 1.5;
       }
+
       .actions {
          display: flex;
          align-items: center;
          justify-content: center;
          gap: 0.75rem;
+
          button {
             background-color: var(--primary);
-            border-radius: 8px;
-            padding: 10px 20px;
             color: whitesmoke;
-            transition: all 500ms ease-in-out;
-            cursor: pointer;
+
+            padding: 10px 20px;
+
+            border-radius: 8px;
+
             font-weight: bold;
+
+            transition: all 500ms ease-in-out;
+
+            cursor: pointer;
+
             &.outline {
-               color: var(--primary);
                background-color: transparent;
-               border: 2px solid var(--primary);
+               color: var(--primary);
+
                padding: 8px 20px;
+
+               border: 2px solid var(--primary);
+
                &:hover {
-                  background-color: rgb(200, 215, 243);
+                  background-color: rgb(200 215 243);
                }
             }
+
             &:hover {
                background-color: #3a7ecc;
             }
@@ -79,16 +102,22 @@
 @media (width <= 1350px) {
    .hero {
       block-size: 35rem;
+
       .hero-content {
-         padding-inline-start: 2rem;
          row-gap: 2rem;
+
+         padding-inline-start: 2rem;
+
          h1 {
-          max-inline-size: 70%;
-          font-size: 3.75rem;
+            max-inline-size: 70%;
+
+            font-size: 3.75rem;
          }
+
          p {
-          font-size: 1.5rem;
-          max-inline-size: 50%;
+            max-inline-size: 50%;
+
+            font-size: 1.5rem;
          }
       }
    }
@@ -99,36 +128,215 @@
       min-block-size: 30rem;
    }
 }
-@media (width <= 1024px) {
+
+@media (width <= 1180px) {
    .hero {
+      block-size: 32rem;
+
       .hero-content {
+         row-gap: 2rem;
+
          h1 {
-            font-size: 3rem;
-            max-inline-size: 60%;
+            font-size: 3.25rem;
          }
+
          p {
-            font-size: 1.5rem;
-            max-inline-size: 55%;
+            max-inline-size: 40%;
+
+            font-size: 1.25rem;
          }
       }
    }
 }
-@media (width <= 640px) {
+
+@media (width <= 1024px) {
    .hero {
-      min-block-size: 30rem;
+      .bg-image {
+         block-size: 90%;
+      }
+
+      .hero-content {
+         row-gap: 2rem;
+
+         padding-block: 2.5rem;
+
+         h1 {
+            max-inline-size: 60%;
+
+            font-size: 2.75rem;
+         }
+
+         p {
+            max-inline-size: 55%;
+
+            font-size: 1.25rem;
+         }
+      }
    }
 }
-@media (width <= 480px) {
+
+@media (width <= 790px) {
    .hero {
       .hero-content {
+         row-gap: 2rem;
+
          h1 {
-            font-size: 2rem;
-            max-inline-size: 95%;
+            font-size: 2.5rem;
          }
+
          p {
-            font-size: 1rem;
+            font-size: 1.15rem;
+         }
+      }
+   }
+}
+
+@media (width <= 720px) {
+   .hero {
+      block-size: 26rem;
+
+      .hero-content {
+         h1 {
             max-inline-size: 85%;
          }
       }
    }
+}
+
+@media (width <= 640px) {
+   .hero {
+      block-size: 30rem;
+   }
+}
+
+@media (width <= 540px) {
+   .hero {
+      block-size: 25rem;
+
+      .hero-content {
+         h1 {
+            max-inline-size: 90%;
+         }
+
+         p {
+            max-inline-size: 90%;
+         }
+      }
+   }
+}
+
+@media (width <= 480px) {
+   .hero {
+      block-size: 28rem;
+
+      .hero-content {
+         h1 {
+            max-inline-size: 95%;
+
+            font-size: 2.25rem;
+         }
+
+         p {
+            max-inline-size: 85%;
+
+            font-size: 1.15rem;
+         }
+      }
+   }
+}
+
+@media (width <= 440px) {
+   .hero {
+      block-size: 25rem;
+
+      .hero-content {
+         row-gap: 4rem;
+
+         h1 {
+            font-size: 2rem;
+         }
+
+         p {
+            font-size: 1rem;
+         }
+      }
+   }
+}
+
+@media (width <= 420px) {
+   .hero {
+      .hero-content {
+         row-gap: 2rem;
+
+         .actions {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            button {
+               padding: 8px 16px;
+
+               &.outline {
+                  width: 100%;
+
+                  padding: 6px 16px;
+
+                  text-align: start;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (width <= 400px) {
+   .hero {
+      .hero-content {
+         h1 {
+            max-inline-size: 100%;
+         }
+      }
+   }
+}
+
+@media (width <= 380px) {
+   .hero {
+      .hero-content {
+         h1 {
+            max-inline-size: 100%;
+         }
+
+         p {
+            max-inline-size: 100%;
+         }
+      }
+   }
+}
+
+@media (width <= 360px) {
+   .hero {
+      .hero-content {
+         row-gap: 3rem;
+
+         h1 {
+            font-size: 1.75rem;
+         }
+
+         p {
+            font-size: 1rem;
+         }
+      }
+   }
+}
+
+@media (width <= 340px) {
+   .hero {
+      .hero-content {
+         row-gap: 2rem;
+      }
+   }
+}
+
+.text * {
+   top: calc(1rem + 2em);
 }

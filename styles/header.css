@@ -99,3 +99,6 @@ header {
       }
    }
 }
+
+@media (width <= 400px) {
+}
