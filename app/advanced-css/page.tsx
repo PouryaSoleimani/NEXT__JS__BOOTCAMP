@@ -15,19 +15,19 @@ const AdvancedCssPage = () => {
             <nav>
                <ul>
                   <li>
-                     <a href="#"></a>
+                     <a href="#">Home</a>
                   </li>
                   <li>
-                     <a href="#"></a>
+                     <a href="#">Services</a>
                   </li>
                   <li>
-                     <a href="#"></a>
+                     <a href="#">Pricing</a>
                   </li>
                   <li>
-                     <a href="#"></a>
+                     <a href="#">Track Shipment</a>
                   </li>
                   <li>
-                     <a href="#"></a>
+                     <a href="#">About us</a>
                   </li>
                </ul>
             </nav>

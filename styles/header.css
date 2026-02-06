@@ -5,11 +5,16 @@ header {
    align-items: center;
    justify-content: space-between;
    padding-inline: 120px;
-   .logo {
-   }
    nav {
       ul {
+         display: flex;
+         gap: 20px;
          li {
+            &:hover {
+               text-decoration: underline;
+               text-decoration-thickness: 2px;
+               text-decoration-color: #214268;
+            }
             a {
             }
          }
@@ -20,8 +25,8 @@ header {
       gap: 10px;
       button {
          background-color: #61a5f3;
-         border-radius: 4px;
-         padding: 12px 24px;
+         border-radius: 8px;
+         padding: 10px 20px;
          color: whitesmoke;
          transition: all 500ms ease-in-out;
          cursor: pointer;
