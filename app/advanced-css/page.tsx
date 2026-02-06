@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const AdvancedCssPage = () => {
    return (
-      <section className="container wrapper">
-         <header>
+      <section className="wrapper">
+         <header className="container">
             <div className="logo">
                <Image
                   src={"/next.svg"}
