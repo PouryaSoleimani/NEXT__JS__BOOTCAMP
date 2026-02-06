@@ -90,10 +90,8 @@ body {
 
 /* //^ ADVANCED CSS COURSE ************************************************************************/
 .wrapper {
-   background-color: var(--background);
-
+   background-color: var(--background); 
    width: min(70rem, 100% - 3rem);
-
    margin-inline: auto;
    padding-block: 1rem;
 }
