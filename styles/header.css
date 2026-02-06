@@ -54,6 +54,8 @@ header {
       display: none;
    }
 }
+
+/* RESPONSIVE DESIGN __________________________________________________________________________________________________________________ */
 @media (width <= 1024px) {
    header {
       background-color: transparent;
@@ -69,6 +71,7 @@ header {
       }
    }
 }
+
 @media (width <= 768px) {
    header {
       .actions {
