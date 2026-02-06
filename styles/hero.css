@@ -1,0 +1,63 @@
+.hero {
+   background: url("/hero-background.avif") no-repeat;
+   background-size: cover;
+   min-block-size: 40rem;
+   .hero-content {
+      background: #fff;
+      background: linear-gradient(
+         90deg,
+         rgba(255, 255, 255, 1) 0%,
+         rgba(255, 255, 255, 0.52) 74%,
+         rgba(255, 255, 255, 0) 100%
+      );
+      border: 3px solid black;
+      inline-size: 73%;
+      margin: 0 auto;
+      min-block-size: inherit;
+      padding-block: 2rem;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      row-gap: 3.5rem;
+      h1 {
+         color: var(--primary);
+         font-size: 4rem;
+         font-weight: 700;
+         inline-size: 90%;
+      }
+      p {
+         font-size: 1.75rem;
+         font-weight: 400;
+         inline-size: 80%;
+      }
+      .actions {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 1rem;
+         button {
+            background-color: var(--primary);
+            border-radius: 8px;
+            padding: 10px 20px;
+            color: whitesmoke;
+            transition: all 500ms ease-in-out;
+            cursor: pointer;
+            font-weight: bold;
+            &.outline {
+               color: var(--primary);
+               background-color: transparent;
+               border: 2px solid var(--primary);
+               padding: 8px 20px;
+               &:hover {
+                  background-color: rgb(200, 215, 243);
+               }
+            }
+            &:hover {
+               background-color: #3a7ecc;
+            }
+         }
+      }
+   }
+}

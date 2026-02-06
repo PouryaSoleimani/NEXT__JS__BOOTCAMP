@@ -10,7 +10,7 @@
 
 html {
    font-family:
-      "JetBrains Mono",
+      "SF Mono",
       system-ui,
       -apple-system,
       BlinkMacSystemFont,
@@ -61,6 +61,8 @@ optgroup {
 body {
    background: var(--background);
    color: var(--foreground);
+   font-feature-settings: "ss01";
+   box-sizing: border-box;
 }
 
 .container {
@@ -83,6 +85,9 @@ body {
 
 /*//^ ADVANCED CSS COURSE ************************************************************************/
 .wrapper {
-   min-height: 100dvh;
    background-color: var(--background);
+   width: min(75rem, 100% - 2rem);
+   margin-inline: auto;
+   padding-inline: 2rem;
+   padding-block: 1rem;
 }

@@ -3,14 +3,7 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding-block: 1rem;
-   margin-inline: auto;
-   width: min(75rem, 100% - 2rem);
-   background-color: white;
-   padding-inline: 2rem;
-   margin-top: 10px;
-   border-radius: 20px;
-   box-shadow: 3px 3px 10px #ccc;
+   margin-block-start: 10px;
 
    .logo {
       width: 200px;
@@ -45,6 +38,15 @@ header {
          transition: all 500ms ease-in-out;
          cursor: pointer;
          font-weight: bold;
+         &.outline {
+            color: var(--primary);
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            padding: 8px 20px;
+            &:hover {
+               background-color: rgb(200, 215, 243);
+            }
+         }
          &:hover {
             background-color: #3a7ecc;
          }

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const AdvancedCssPage = () => {
    return (
-      <section className="wrapper">
-         <header>
+      <section>
+         <header className="wrapper">
             <div className="logo">
                <Image
                   src={"/next.svg"}
@@ -37,11 +37,25 @@ const AdvancedCssPage = () => {
             </div>
             <div className="actions">
                <button>Login</button>
-               <button>Sign Up</button>
+               <button className="outline">Sign Up</button>
             </div>
          </header>
 
-         <main></main>
+         <main className="">
+            <div className="hero">
+               <div className="hero-content">
+                  <h1>Effortless Logistics, Every Step of the Way</h1>
+                  <p>
+                     Manage Your shipments, track in real-time , and get
+                     the best rates --all from one platform
+                  </p>
+                  <div className="actions">
+                     <button>Get a Free Quote</button>
+                     <button className="outline">Learn More</button>
+                  </div>
+               </div>
+            </div>
+         </main>
          <footer></footer>
       </section>
    );
