@@ -14,6 +14,7 @@ header {
          color: whitesmoke;
          transition: all 500ms ease-in-out;
          cursor: pointer;
+         font-weight: bold;
          &:hover {
             background-color: #214268;
          }

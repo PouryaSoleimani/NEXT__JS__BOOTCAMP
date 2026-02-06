@@ -23,7 +23,19 @@ html {
       "Helvetica Neue",
       sans-serif;
 }
-
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+   font-family: inherit;
+}
 :root {
    --background: #dddbdb;
    --foreground: #171717;
