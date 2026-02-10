@@ -66,7 +66,7 @@ const AdvancedCssPage = () => {
                </div>
             </div>
          </main>
-       
+
          <footer></footer>
       </section>
    );
