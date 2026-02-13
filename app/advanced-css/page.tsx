@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const AdvancedCssPage = () => {
    return (
-      <section className="container border-2 border-zinc-400 mx-auto">
+      <section className="container border-4 border-zinc-400 mx-auto">
          <header className="">
             <div className="logo">
                <Image
