@@ -120,13 +120,78 @@ const AdvancedCssPage = () => {
                </div>
             </div>
 
-            <div id="TEST_GRID_SECTION" className="grid-wrapper">
-               <div className="box one">one</div>
-               <div className="box two">two</div>
-               <div className="box three">three</div>
-               <div className="box four">four</div>
-               <div className="box five">five</div>
-               <div className="box six">six</div>
+            <div id="STATS__SECTION" className="grid-wrapper">
+               <div className="box one">
+                  <Image
+                     src={"/images/stats/stats_1.png"}
+                     width={250}
+                     height={250}
+                     alt=""
+                     className="box_image"
+                  />
+                  <h4 className="value">10,000+</h4>
+                  <p className="label">Deliveries Managed</p>
+               </div>
+               <div className="box two">
+                  <Image
+                     src={"/images/stats/stats_2.png"}
+                     width={250}
+                     height={250}
+                     alt=""
+                     className="box_image"
+                  />
+                  <h4 className="value">2,500+</h4>
+                  <p className="label">Active Clients</p>
+               </div>
+               <div className="box three">
+                  <Image
+                     src={"/images/stats/stats_3.png"}
+                     width={250}
+                     height={250}
+                     alt=""
+                     className="box_image"
+                  />
+                  <h4 className="value">98%</h4>
+                  <p className="label">On-Time Delivery Rate</p>
+               </div>
+               <div className="box four">
+                  <Image
+                     src={"/images/stats/stats_4.png"}
+                     width={250}
+                     height={250}
+                     alt=""
+                     className="box_image"
+                  />
+                  <h4 className="value">200+</h4>
+                  <p className="label">Industry Awards</p>
+               </div>
+               <div className="box five">
+                  <Image
+                     src={"/images/stats/stats_5.png"}
+                     width={250}
+                     height={250}
+                     alt=""
+                     className="box_image"
+                  />
+                  <h4 className="value">32+</h4>
+                  <p className="label">Active Branches</p>
+               </div>
+               <div className="box six">
+                  <div className="flags_wrapper">
+                     {Array.from({ length: 5 }).map((_, index) => (
+                        <Image
+                           key={index as number}
+                           src={`/images/stats/stats_6_${Number(index) + 1}.png`}
+                           width={250}
+                           height={250}
+                           alt=""
+                           className="box_image"
+                        />
+                     ))}
+                  </div>
+                  <h4 className="value">14+</h4>
+                  <p className="label">Coutries In Europe</p>
+               </div>
             </div>
          </main>
 
