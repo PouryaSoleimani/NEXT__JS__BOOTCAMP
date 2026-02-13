@@ -75,56 +75,53 @@ const AdvancedCssPage = () => {
                id="SERVICES"
                className="services_wrapper">
                <div className="box">
-                  <div className="box_conent">
+                  <div className="box_content">
                      <ClockIcon
-                        size={32}
+                        size={48}
                         weight="fill"
                         fill="#214268"
+                        className="box_content_icon"
                      />
                      <h3 className="box_content_title">
                         Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. A, laborum?
                      </h3>
                      <p className="box_content_description">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Enim odit, dolore quos accusantium facilis
-                        qui suscipit adipisci esse veniam consectetur.
                      </p>
                   </div>
                </div>
                <div className="box">
                   <div className="box_content">
                      <HardDrivesIcon
-                        size={32}
+                        size={48}
                         weight="fill"
                         fill="#214268"
+                        className="box_content_icon"
                      />
                      <h3 className="box_content_title">
                         Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. A, laborum?
                      </h3>
                      <p className="box_content_description">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Enim odit, dolore quos accusantium facilis
-                        qui suscipit adipisci esse veniam consectetur.
                      </p>
                   </div>
                </div>
                <div className="box">
                   <div className="box_content">
                      <BooksIcon
-                        size={32}
+                        size={48}
                         weight="fill"
                         fill="#214268"
+                        className="box_content_icon"
                      />
                      <h3 className="box_content_title">
                         Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. A, laborum?
                      </h3>
                      <p className="box_content_description">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Enim odit, dolore quos accusantium facilis
-                        qui suscipit adipisci esse veniam consectetur.
                      </p>
                   </div>
                </div>
