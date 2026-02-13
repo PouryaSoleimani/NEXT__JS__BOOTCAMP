@@ -96,7 +96,7 @@ body {
    padding-block: 1rem;
 }
 
-@media (width <= 520px){
+@media (width <= 520px) {
    .container {
       padding: 0 0;
    }
