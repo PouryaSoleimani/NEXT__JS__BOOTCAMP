@@ -45,8 +45,9 @@
          inset: 0;
          .van_image {
             position: absolute;
-            right: -22.5%;
-            top: -15%;
+            top: -14%;
+            right: -10.5%;
+            scale: 1.25;
          }
          .quote_cta_btn {
             display: flex;
@@ -84,6 +85,7 @@
          }
          .quote_cta {
             .van_image {
+               scale: 1.25;
                top: -10%;
                right: 3.5%;
             }
@@ -114,7 +116,7 @@
    }
 }
 
-@media (width <=1320px) {
+@media (width <= 1320px) {
    .quote_wrapper {
       .quote_background {
          column-gap: 0;
