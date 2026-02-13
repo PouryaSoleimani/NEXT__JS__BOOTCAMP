@@ -7,7 +7,7 @@ import { ArrowRightIcon, QuotesIcon } from "@phosphor-icons/react";
 
 const AdvancedCssPage = () => {
    return (
-      <section className="container border-4 border-zinc-400 mx-auto">
+      <section className="container border-zinc-400 mx-auto">
          <header id="HEADER__SECTION" className="">
             <div className="logo">
                <Image
