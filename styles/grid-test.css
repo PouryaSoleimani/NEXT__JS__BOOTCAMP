@@ -4,8 +4,6 @@
    padding: 0.5rem;
    background-color: black;
    border-radius: 0.75rem;
-   /* max-width: 95%;
-   margin-inline: auto; */
 
    display: grid;
    grid-template-columns: repeat(12, 1fr);
