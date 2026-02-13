@@ -61,6 +61,13 @@
          grid-column-start: span 2;
          width: 100%;
       }
+      .box {
+         .box_content {
+            .box_content_title {
+               max-inline-size: 85%;
+            }
+         }
+      }
    }
 }
 
@@ -71,6 +78,13 @@
       .box:last-child {
          width: auto;
          grid-column-start: span 1;
+      }
+      .box {
+         .box_content {
+            .box_content_title {
+               max-inline-size: 60%;
+            }
+         }
       }
    }
 }
