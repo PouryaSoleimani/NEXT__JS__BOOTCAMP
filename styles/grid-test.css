@@ -35,7 +35,7 @@
             rotate: -2deg;
          }
          &:last-child {
-            transform: translateY(10px);
+            transform: translateY(6px);
          }
       }
    }
