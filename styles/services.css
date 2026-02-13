@@ -88,3 +88,9 @@
       }
    }
 }
+
+@media (width <= 520px) {
+   .services_wrapper {
+      padding-inline: 0.75rem;
+   }
+}

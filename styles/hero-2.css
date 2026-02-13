@@ -153,11 +153,29 @@
             }
          }
          h1 {
-            max-width: 100%;
+            max-inline-size: 100%;
          }
 
          p {
             max-inline-size: 80%;
+         }
+      }
+   }
+}
+
+@media (max-width: 520px) {
+   .hero {
+      padding-inline: 0.75rem;
+      .hero-content {
+         h1 {
+            font-size: 3rem;
+         }
+         p {
+            font-size: 1.5rem;
+            color: #303030;
+            background-color: #ffffff4f;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
          }
       }
    }
