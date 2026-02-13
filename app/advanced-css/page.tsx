@@ -46,7 +46,6 @@ const AdvancedCssPage = () => {
          </header>
 
          <main>
-            
             <div id="HERO__SECTION" className="hero">
                <div className="background-image">
                   <Image
