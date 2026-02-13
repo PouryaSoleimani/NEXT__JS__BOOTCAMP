@@ -18,10 +18,13 @@
       border-radius: 20px;
       border: 4px solid transparent;
       padding: 24px;
-      transition: all 300ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      box-shadow: 1px 1px 50px #ccc;
+
       cursor: pointer;
       &:hover {
-         box-shadow: 1px 1px 5px 1px #b8b8b8;
+         box-shadow: 3px 3px 50px rgba(98, 131, 220, 0.49);
+         border-color: rgba(98, 131, 220, 0.49);
       }
       .box_content {
          display: flex;

@@ -6,7 +6,7 @@
       width: 90%;
       height: 100%;
       margin-inline: auto;
-      border-radius: 1.25rem;
+      border-radius: 2rem;
       box-shadow: 1px 1px 80px #02020250;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -49,28 +49,37 @@
             top: -14%;
             right: -10.5%;
             scale: 1.25;
+            animation: bounce 5s both infinite;
          }
          .quote_cta_btn {
             display: flex;
             gap: 0.5rem;
             background-color: rgb(48, 66, 98);
-            padding: 1rem 1.5rem;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
             color: white;
             font-size: 1.25rem;
             font-weight: 800;
-            border-radius: 0.5rem;
+            border-radius: 999rem;
             position: absolute;
             bottom: 2rem;
             right: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
             transition: all 250ms linear;
             .arrow_right_icon {
                transition: all 250ms linear;
+               background-color: white;
+               color: cornflowerblue;
+               border-radius: 999rem;
+               padding: 0.3rem;
             }
             &:hover {
                background-color: var(--primary);
+               padding-inline-end: 1rem;
                .arrow_right_icon {
-                  transform: translateX(0.5rem);
+                  transform: translateX(0.325rem);
                }
             }
          }

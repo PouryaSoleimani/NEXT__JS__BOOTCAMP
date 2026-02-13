@@ -111,7 +111,7 @@ const AdvancedCssPage = () => {
                      <button className="quote_cta_btn">
                         Get a Free Quote
                         <ArrowRightIcon
-                           size={32}
+                           size={40}
                            weight="fill"
                            className="arrow_right_icon"
                         />
