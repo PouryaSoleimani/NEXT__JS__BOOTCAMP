@@ -6,12 +6,14 @@
    border-radius: 0.75rem;
 
    display: grid;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-areas: "one one two two three three four five five five six six";
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-areas:
+      "one one two two three three"
+      "four four four five five five"
+      "six six six six six six";
 
    .box {
-      width: auto;
-      height: 10rem;
+      height: 20rem;
       margin: 0.5rem;
       border-radius: 0.25rem;
       text-transform: uppercase;
@@ -52,10 +54,10 @@
    .grid-wrapper {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
-         "one one"
-         "two two"
+         "one two"
          "three four"
-         "five six";
+         "five five"
+         "six six ";
    }
 }
 
@@ -77,5 +79,18 @@
          "two two two three"
          "four five five five"
          "six six six six";
+   }
+}
+
+@media (width <= 640) {
+   .grid-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+         "one"
+         "two"
+         "three"
+         "four"
+         "five"
+         "six";
    }
 }
