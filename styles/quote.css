@@ -1,5 +1,6 @@
 .quote_wrapper {
    height: 600px;
+   margin-block: 3rem;
    border-radius: 0.75rem;
    .quote_background {
       width: 90%;
@@ -133,6 +134,7 @@
 
 @media (width <= 1050px) {
    .quote_wrapper {
+      margin-block: 1.5rem;
       .quote_background {
          .quote_cta {
             .van_image {

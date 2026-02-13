@@ -2,7 +2,7 @@
    margin-top: 6rem;
    height: auto;
    padding: 0.5rem;
-   background-color: black;
+   background-color: #e7e7e790;
    border-radius: 0.75rem;
 
    display: grid;
@@ -26,31 +26,31 @@
 
    .one {
       grid-area: one;
-      background-color: rgb(255, 0, 0);
+      background-color: white;
    }
    .two {
       grid-area: two;
-      background-color: blue;
+      background-color: white;
    }
    .three {
       grid-area: three;
-      background-color: yellow;
+      background-color: white;
    }
    .four {
       grid-area: four;
-      background-color: green;
+      background-color: white;
    }
    .five {
       grid-area: five;
-      background-color: violet;
+      background-color: white;
    }
    .six {
       grid-area: six;
-      background-color: teal;
+      background-color: white;
    }
 }
 
-@media (width <=1720px) {
+@media (width <= 1720) {
    .grid-wrapper {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
