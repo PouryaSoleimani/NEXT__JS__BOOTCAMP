@@ -91,6 +91,7 @@ const AdvancedCssPage = () => {
                      </p>
                   </div>
                </div>
+
                <div className="box">
                   <div className="box_content">
                      <HardDrivesIcon
@@ -108,6 +109,7 @@ const AdvancedCssPage = () => {
                      </p>
                   </div>
                </div>
+
                <div className="box">
                   <div className="box_content">
                      <BooksIcon
