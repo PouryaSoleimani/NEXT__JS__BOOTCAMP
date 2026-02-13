@@ -3,11 +3,12 @@
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import { boxesData, SingleBoxDataType } from "./mock";
+import { ArrowRightIcon, QuotesIcon } from "@phosphor-icons/react";
 
 const AdvancedCssPage = () => {
    return (
       <section className="container border-4 border-zinc-400 mx-auto">
-         <header className="">
+         <header id="HEADER__SECTION" className="">
             <div className="logo">
                <Image
                   src={"/next.svg"}
@@ -45,7 +46,7 @@ const AdvancedCssPage = () => {
          </header>
 
          <main>
-            <div className="hero">
+            <div id="HERO__SECTION" className="hero">
                <div className="background-image">
                   <Image
                      className="bg-image"
@@ -68,7 +69,7 @@ const AdvancedCssPage = () => {
                   </div>
                </div>
             </div>
-            <div id="SERVICES" className="services_wrapper">
+            <div id="SERVICES__SECTION" className="services_wrapper">
                {boxesData.map((box: SingleBoxDataType) => (
                   <div className="box" key={box.id}>
                      <div className="box_content">
@@ -80,6 +81,43 @@ const AdvancedCssPage = () => {
                      </div>
                   </div>
                ))}
+            </div>
+
+            <div id="QUOTE__SECTION" className="quote_wrapper">
+               <div className="quote_background">
+                  <div className="quote_writings">
+                     <h3>Your Fleet&apos;s Safety , Our Top Priority</h3>
+                     <p>
+                        Regular safety checks are maintenance are part of
+                        our commitment to keeping your fleet in top
+                        condition. Our app schedules and tracks
+                        inspections, ensuring that every vehicle meets
+                        stringent safety standards
+                     </p>
+                     <QuotesIcon
+                        size={96}
+                        weight="fill"
+                        className="quote_writings_icon"
+                     />
+                  </div>
+                  <div className="quote_cta">
+                     <Image
+                        src={"/images/van_vector.png"}
+                        width={900}
+                        height={300}
+                        alt="van_image"
+                        className="van_image"
+                     />
+                     <button className="quote_cta_btn">
+                        Get a Free Quote
+                        <ArrowRightIcon
+                           size={32}
+                           weight="fill"
+                           className="arrow_right_icon"
+                        />
+                     </button>
+                  </div>
+               </div>
             </div>
          </main>
 
