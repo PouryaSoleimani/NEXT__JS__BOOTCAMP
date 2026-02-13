@@ -68,13 +68,9 @@ const AdvancedCssPage = () => {
                   </div>
                </div>
             </div>
-            <div
-               id="SERVICES"
-               className="services_wrapper">
+            <div id="SERVICES" className="services_wrapper">
                {boxesData.map((box: SingleBoxDataType) => (
-                  <div
-                     className="box"
-                     key={box.id}>
+                  <div className="box" key={box.id}>
                      <div className="box_content">
                         {box.icon}
                         <h3 className="box_content_title">{box.title}</h3>

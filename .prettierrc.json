@@ -3,7 +3,7 @@
    "semi": true,
    "bracketSameLine": true,
    "bracketSpacing": true,
-   "singleAttributePerLine": true,
+   "singleAttributePerLine": false,
    "htmlWhitespaceSensitivity": "css",
    "trailingComma": "es5",
    "arrowParens": "always",
