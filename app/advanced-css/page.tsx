@@ -69,7 +69,6 @@ const AdvancedCssPage = () => {
                   </div>
                </div>
             </div>
-
             <div id="SERVICES__SECTION" className="services_wrapper">
                {boxesData.map((box: SingleBoxDataType) => (
                   <div className="box" key={box.id}>
@@ -83,7 +82,6 @@ const AdvancedCssPage = () => {
                   </div>
                ))}
             </div>
-
             <div id="QUOTE__SECTION" className="quote_wrapper">
                <div className="quote_background">
                   <div className="quote_writings">
@@ -120,7 +118,6 @@ const AdvancedCssPage = () => {
                   </div>
                </div>
             </div>
-
             <div id="STATS__SECTION" className="grid-wrapper">
                <div className="box one">
                   <Image
@@ -192,6 +189,35 @@ const AdvancedCssPage = () => {
                   </div>
                   <h4 className="value">14+</h4>
                   <p className="label">Coutries In Europe</p>
+               </div>
+            </div>
+
+            <div id="CTA__SECTION">
+               <div className="cta_writings">
+                  <h2>
+                     Ready to Revolutionize Your Logistics Operations ?
+                  </h2>
+                  <p>
+                     Join countless other businesses that have streamlined
+                     their logistics with our cutting-edge solutions
+                  </p>
+                  <button className="quote_cta_btn">
+                     Get a Free Quote
+                     <ArrowRightIcon
+                        size={40}
+                        weight="fill"
+                        className="arrow_right_icon"
+                     />
+                  </button>
+               </div>
+               <div className="cta_image_wrapper">
+                  <Image
+                     src={"/images/cta/cta_truck.png"}
+                     width={400}
+                     height={500}
+                     alt="truck_image"
+                     className="cta_image"
+                  />
                </div>
             </div>
          </main>
