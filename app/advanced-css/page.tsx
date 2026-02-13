@@ -1,11 +1,8 @@
 "use client";
-import {
-   BooksIcon,
-   ClockIcon,
-   HardDrivesIcon,
-} from "@phosphor-icons/react";
+
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
+import { boxesData, SingleBoxDataType } from "./mock";
 
 const AdvancedCssPage = () => {
    return (
@@ -74,59 +71,19 @@ const AdvancedCssPage = () => {
             <div
                id="SERVICES"
                className="services_wrapper">
-               <div className="box">
-                  <div className="box_content">
-                     <ClockIcon
-                        size={48}
-                        weight="fill"
-                        fill="#214268"
-                        className="box_content_icon"
-                     />
-                     <h3 className="box_content_title">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                     </h3>
-                     <p className="box_content_description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Enim odit, dolore quos accusantium facilis
-                     </p>
+               {boxesData.map((box: SingleBoxDataType) => (
+                  <div
+                     className="box"
+                     key={box.id}>
+                     <div className="box_content">
+                        {box.icon}
+                        <h3 className="box_content_title">{box.title}</h3>
+                        <p className="box_content_description">
+                           {box.description}
+                        </p>
+                     </div>
                   </div>
-               </div>
-
-               <div className="box">
-                  <div className="box_content">
-                     <HardDrivesIcon
-                        size={48}
-                        weight="fill"
-                        fill="#214268"
-                        className="box_content_icon"
-                     />
-                     <h3 className="box_content_title">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                     </h3>
-                     <p className="box_content_description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Enim odit, dolore quos accusantium facilis
-                     </p>
-                  </div>
-               </div>
-
-               <div className="box">
-                  <div className="box_content">
-                     <BooksIcon
-                        size={48}
-                        weight="fill"
-                        fill="#214268"
-                        className="box_content_icon"
-                     />
-                     <h3 className="box_content_title">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                     </h3>
-                     <p className="box_content_description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Enim odit, dolore quos accusantium facilis
-                     </p>
-                  </div>
-               </div>
+               ))}
             </div>
          </main>
 
