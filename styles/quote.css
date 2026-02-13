@@ -1,5 +1,6 @@
 .quote_wrapper {
    height: 600px;
+   scale: 0.75;
    margin-block: 3rem;
    border-radius: 0.75rem;
    .quote_background {

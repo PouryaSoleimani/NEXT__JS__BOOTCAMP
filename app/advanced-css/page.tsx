@@ -7,7 +7,7 @@ import { ArrowRightIcon, QuotesIcon } from "@phosphor-icons/react";
 
 const AdvancedCssPage = () => {
    return (
-      <section className="container border-zinc-400 mx-auto">
+      <section className="container  border-zinc-400 mx-auto">
          <header id="HEADER__SECTION" className="">
             <div className="logo">
                <Image
@@ -46,6 +46,7 @@ const AdvancedCssPage = () => {
          </header>
 
          <main>
+            
             <div id="HERO__SECTION" className="hero">
                <div className="background-image">
                   <Image
@@ -69,6 +70,7 @@ const AdvancedCssPage = () => {
                   </div>
                </div>
             </div>
+
             <div id="SERVICES__SECTION" className="services_wrapper">
                {boxesData.map((box: SingleBoxDataType) => (
                   <div className="box" key={box.id}>
