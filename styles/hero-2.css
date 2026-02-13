@@ -104,9 +104,16 @@
    }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
    .hero {
       .hero-content {
+         row-gap: 1rem;
+         .actions {
+            margin-top: 2rem;
+            button {
+               block-size: 60px;
+            }
+         }
          h1 {
             max-width: 100%;
          }
