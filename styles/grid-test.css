@@ -28,6 +28,15 @@
       &:hover {
          border-color: rgb(145, 175, 232);
          box-shadow: 1px 1px 2px rgb(145, 175, 232, 0.5);
+         &:nth-child(odd) {
+            rotate: 2deg;
+         }
+         &:nth-child(even):not(:last-child) {
+            rotate: -2deg;
+         }
+         &:last-child {
+            transform: translateY(10px);
+         }
       }
    }
 
