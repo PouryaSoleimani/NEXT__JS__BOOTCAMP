@@ -192,7 +192,7 @@ const AdvancedCssPage = () => {
                </div>
             </div>
 
-            <div id="CTA__SECTION">
+            <div id="CTA__SECTION" className="cta_wrapper">
                <div className="cta_writings">
                   <h2>
                      Ready to Revolutionize Your Logistics Operations ?
@@ -201,10 +201,10 @@ const AdvancedCssPage = () => {
                      Join countless other businesses that have streamlined
                      their logistics with our cutting-edge solutions
                   </p>
-                  <button className="quote_cta_btn">
+                  <button>
                      Get a Free Quote
                      <ArrowRightIcon
-                        size={40}
+                        size={32}
                         weight="fill"
                         className="arrow_right_icon"
                      />
