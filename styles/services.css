@@ -3,7 +3,7 @@
    height: auto;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: 30px;
+   column-gap: 30px;
    padding-block: 30px;
    .box {
       background:
@@ -42,5 +42,28 @@
    }
 }
 
+/*//^  RESPONSIVE _____________________________________________________________- */
+@media (width <= 1220px) {
+   .services_wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-content: space-around;
+      justify-items: center;
+      column-gap: 0;
+      gap: 20px;
+      .box:last-child {
+         grid-column-start: span 2;
+         width: 100%;
+      }
+   }
+}
 
-/*//^  */
+@media (width <= 768px) {
+   .services_wrapper {
+      grid-template-columns: 1fr;
+      .box:last-child {
+         width: auto;
+         grid-column-start: span 1;
+      }
+   }
+}
