@@ -1,9 +1,9 @@
 .grid-wrapper {
    margin-top: 6rem;
    height: auto;
-   padding: 0.5rem;
-   background-color: #e7e7e790;
-   border-radius: 0.75rem;
+   padding: 2rem;
+   /* background-color: #e7e7e790; */
+   border-radius: 1.75rem;
 
    display: grid;
    grid-template-columns: repeat(6, 1fr);
@@ -14,39 +14,34 @@
 
    .box {
       height: 20rem;
-      margin: 0.5rem;
-      border-radius: 0.25rem;
+      margin: 1.5rem;
+      border-radius: 1.25rem;
       text-transform: uppercase;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 2rem;
       font-weight: 900;
+      background-color: #e7e7e7;
    }
 
    .one {
       grid-area: one;
-      background-color: white;
    }
    .two {
       grid-area: two;
-      background-color: white;
    }
    .three {
       grid-area: three;
-      background-color: white;
    }
    .four {
       grid-area: four;
-      background-color: white;
    }
    .five {
       grid-area: five;
-      background-color: white;
    }
    .six {
       grid-area: six;
-      background-color: white;
    }
 }
 
