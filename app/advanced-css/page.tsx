@@ -119,6 +119,15 @@ const AdvancedCssPage = () => {
                   </div>
                </div>
             </div>
+
+            <div id="TEST_GRID_SECTION" className="grid-wrapper">
+               <div className="box one">one</div>
+               <div className="box two">two</div>
+               <div className="box three">three</div>
+               <div className="box four">four</div>
+               <div className="box five">five</div>
+               <div className="box six">six</div>
+            </div>
          </main>
 
          <footer></footer>

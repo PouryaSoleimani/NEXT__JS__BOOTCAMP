@@ -1,0 +1,81 @@
+.grid-wrapper {
+   margin-top: 6rem;
+   height: auto;
+   padding: 0.5rem;
+   background-color: black;
+   border-radius: 0.75rem;
+
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-areas: "one one two two three three four five five five six six";
+
+   .box {
+      width: auto;
+      height: 10rem;
+      margin: 0.5rem;
+      border-radius: 0.25rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 900;
+   }
+
+   .one {
+      grid-area: one;
+      background-color: rgb(255, 0, 0);
+   }
+   .two {
+      grid-area: two;
+      background-color: blue;
+   }
+   .three {
+      grid-area: three;
+      background-color: yellow;
+   }
+   .four {
+      grid-area: four;
+      background-color: green;
+   }
+   .five {
+      grid-area: five;
+      background-color: violet;
+   }
+   .six {
+      grid-area: six;
+      background-color: teal;
+   }
+}
+
+@media (width <=1720px) {
+   .grid-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+         "one one"
+         "two two"
+         "three four"
+         "five six";
+   }
+}
+
+@media (width <= 1440) {
+   .grid-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+         "one one two two"
+         "three three three four"
+         "five five six six";
+   }
+}
+
+@media (width <= 1024) {
+   .grid-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+         "one one one one"
+         "two two two three"
+         "four five five five"
+         "six six six six";
+   }
+}

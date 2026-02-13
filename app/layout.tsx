@@ -5,6 +5,7 @@ import "@/styles/header.css";
 import "@/styles/hero-2.css";
 import "@/styles/services.css";
 import "@/styles/quote.css";
+import "@/styles/grid-test.css";
 
 const geistSans = Geist({
    variable: "--font-geist-sans",
