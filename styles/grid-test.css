@@ -1,7 +1,7 @@
 .grid-wrapper {
    margin-top: 6rem;
    height: auto;
-   padding: 2rem;
+   padding: 0;
    border-radius: 1.75rem;
 
    display: grid;
@@ -13,7 +13,7 @@
 
    .box {
       height: 20rem;
-      margin: 1.5rem;
+      margin: 1rem;
       border-radius: 1.25rem;
       text-transform: uppercase;
       display: flex;
@@ -83,18 +83,23 @@
 
 @media (width <= 1024) {
    .grid-wrapper {
+      padding: 0.75rem;
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas:
          "one one one one"
          "two two two three"
          "four five five five"
          "six six six six";
+
+      .box {
+         margin: 0.75rem;
+      }
    }
 }
 
 @media (width <= 640) {
    .grid-wrapper {
-      padding: 0;
+      padding: 0 1rem;
       .box {
          margin: 1rem 0;
       }
