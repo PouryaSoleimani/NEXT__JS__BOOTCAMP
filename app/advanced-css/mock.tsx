@@ -55,6 +55,3 @@ export const boxesData: SingleBoxDataType[] = [
          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim odit, dolore quos accusantium facilis",
    },
 ];
-
-
-
