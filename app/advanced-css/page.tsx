@@ -41,7 +41,7 @@ const AdvancedCssPage = () => {
             </div>
             <div className="actions">
                <button>Login</button>
-               <button className="outline">Sign Up</button>
+               <button className="outline btn">Sign Up</button>
             </div>
          </header>
 
