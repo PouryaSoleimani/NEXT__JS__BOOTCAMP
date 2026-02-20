@@ -4,6 +4,7 @@ import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import { boxesData, SingleBoxDataType } from "./mock";
 import { ArrowRightIcon, QuotesIcon } from "@phosphor-icons/react";
+import FooterComponent from "@/components/FooterComponent";
 
 const AdvancedCssPage = () => {
    return (
@@ -225,7 +226,7 @@ const AdvancedCssPage = () => {
             </div>
          </main>
 
-         <footer></footer>
+         <FooterComponent />
       </section>
    );
 };

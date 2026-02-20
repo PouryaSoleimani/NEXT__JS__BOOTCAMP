@@ -1,0 +1,5 @@
+.footer-wrapper {
+   background-color: cornflowerblue;
+   min-height: 24rem;
+   margin-inline: min(1rem, (100% - 1500px) / 2);
+}

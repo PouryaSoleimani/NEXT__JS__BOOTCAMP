@@ -9,6 +9,7 @@ import "@/styles/services.css";
 import "@/styles/quote.css";
 import "@/styles/grid-test.css";
 import "@/styles/cta.css";
+import "@/styles/footer.css";
 
 import "@/styles/animations.css";
 
