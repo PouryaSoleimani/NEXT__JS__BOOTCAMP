@@ -2,7 +2,7 @@
    background-color: cornflowerblue;
    height: 26rem;
    margin-inline: auto;
-   width: 98%;
+   width: 97%;
    color: white;
    font-weight: 600;
    padding: 2.5%;
@@ -102,7 +102,7 @@
 @media (width <= 1180px) {
    .footer-wrapper {
       .upper-footer {
-         gap: 10%;
+         gap: 6%;
       }
    }
 }
@@ -167,4 +167,3 @@
       }
    }
 }
-
