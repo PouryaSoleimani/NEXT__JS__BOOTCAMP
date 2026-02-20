@@ -1,5 +1,6 @@
+import prisma from "@/lib/prisma";
 
 export default async function Page() {
-  console.info('PAGE')
-   return <div>page</div>;
+   const users = await prisma.user.findMany();
+   return <div>{users.length}</div>;
 }
