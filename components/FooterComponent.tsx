@@ -2,7 +2,6 @@ import MingcuteFacebookFill from "@/public/icons/MingcuteFacebookFill";
 import MingcuteInstagramLine from "@/public/icons/MingcuteInstagramLine";
 import MingcuteLinkedinFill from "@/public/icons/MingcuteLinkedinFill";
 import MingcuteYoutubeFill from "@/public/icons/MingcuteYoutubeFill";
-import React from "react";
 
 const FooterComponent = () => {
    return (
@@ -19,41 +18,81 @@ const FooterComponent = () => {
                <div className="footer_nav_group">
                   <h4>TITLE</h4>
                   <ul>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
                   </ul>
                </div>
                <div className="footer_nav_group">
                   <h4>TITLE</h4>
                   <ul>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
                   </ul>
                </div>
                <div className="footer_nav_group">
                   <h4>TITLE</h4>
                   <ul>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
                   </ul>
                </div>
                <div className="footer_nav_group">
                   <h4>TITLE</h4>
                   <ul>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
-                     <li>LOREM</li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
+                     <li>
+                        <a href="#">LOREM</a>
+                     </li>
                   </ul>
                </div>
             </div>
