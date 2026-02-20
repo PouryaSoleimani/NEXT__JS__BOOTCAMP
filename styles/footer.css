@@ -1,5 +1,140 @@
 .footer-wrapper {
    background-color: cornflowerblue;
-   min-height: 24rem;
-   margin-inline: min(1rem, (100% - 1500px) / 2);
+   height: 26rem;
+   margin-inline: auto;
+   width: 98%;
+   color: white;
+   font-weight: 600;
+   padding: 2.5%;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
+   .upper-footer {
+      height: 90%;
+      grid-area: upper;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      .logo_moto {
+         display: grid;
+         grid-template-columns: 2;
+         grid-template-areas: "logo logo" "moto moto";
+         gap: 8px;
+         align-content: start;
+         h2 {
+            grid-area: logo;
+            font-size: 4rem;
+         }
+         p {
+            grid-area: moto;
+            font-size: 1.25rem;
+            max-width: 40ch;
+         }
+      }
+
+      .footer_nav {
+         display: flex;
+         flex-shrink: 0;
+         .footer_nav_group {
+            padding: 1rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+            width: 100%;
+            justify-items: baseline;
+            align-content: center;
+            h4 {
+               font-size: 2rem;
+            }
+            ul {
+               display: grid;
+               gap: 1rem;
+               text-align: start;
+               width: 100%;
+               padding-inline: 0.25rem;
+            }
+         }
+      }
+   }
+
+   .bottom-footer {
+      height: 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block-start: 2rem;
+      border-top: 3px solid white;
+      .socials {
+         display: flex;
+         gap: 0.5rem;
+         svg {
+            width: 40px;
+            height: 40px;
+         }
+      }
+      .copyright {
+         display: flex;
+      }
+   }
+}
+
+@media (width <= 900px) {
+   .footer-wrapper {
+      height: auto;
+
+      .upper-footer {
+         grid-template-columns: 1fr;
+         .logo_moto {
+            p {
+               max-width: 30ch;
+            }
+         }
+      }
+   }
+}
+
+@media (width <= 640px) {
+   .footer-wrapper {
+      .upper-footer {
+         gap: 1rem;
+         .footer_nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .footer_nav_group {
+               justify-items: center;
+               gap: 1rem;
+               ul {
+                  text-align: center;
+                  align-items: center;
+                  justify-items: center;
+                  padding: 1rem;
+               }
+            }
+         }
+      }
+
+      .bottom-footer {
+         flex-direction: column;
+         gap: 1rem;
+      }
+   }
+}
+
+@media (width <=360px) {
+   .footer-wrapper {
+      .upper-footer {
+         .logo_moto {
+            h2 {
+               font-size: 3rem;
+            }
+         }
+         .footer_nav {
+          grid-template-columns: 1fr;
+            .footer_nav_group {
+               padding: 0;
+            }
+         }
+      }
+   }
 }
